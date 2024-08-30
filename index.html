@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>THIRD_PROJECT</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="offcanvas offcanvas-top" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title text-primary">Translation:</h1>
+    </div>
+    <div class="offcanvas-body">
+      <p style="display: block; margin-top: -20px;">Copied to  Clipboard</p>
+      <button class="btn btn-danger" type="button">close</button>
+    </div>
+  </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/png-transparent-kempinski-nile-hotel-garden-city-cairo-logo-tourism-travel-egypt-tourism-blue-text-egypt.png" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> 
+            </a>
+          <a class="navbar-brand text-light ms-2" href="javascript:void(0)" style="border-right: 1px solid black; padding-right: 10px;">Egypt</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="javascript:void(0)">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="javascript:void(0)">Contacts</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown">Trips</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-primary" href="#">Cairo</a></li>
+                  <li><a class="dropdown-item text-primary" style="border-bottom: 1px solid black;" href="#">Alex</a></li>
+                  <li><a class="dropdown-item text-primary" href="#">Luxor</a></li>
+                  <li><a class="dropdown-item text-primary" href="#">Aswan</a></li>
+                  <li><a class="dropdown-item text-primary" href="#">Sharm Elshisk</a></li>
+                  <li><a class="dropdown-item text-primary" href="#">El Galala</a></li>
+                  <li><a class="dropdown-item text-primary" href="#">More...</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="javascript:void(0)">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 border-primary" type="text" placeholder="Search">
+              <button class="btn btn-primary me-2" type="button">Search</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                login
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Login</h4>
+              <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form action="/action_page.php">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="border: 1px solid rgb(19, 98, 244) ;">
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" style="border: 1px solid rgb(19, 98, 244) ;">
+                </div>
+                <div class="form-check mb-3">
+                  <label class="form-check-label me-4">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                      <label class="form-check-label" for="mySwitch">Remember me</label>
+                    </div>
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" style="margin-right: auto;">Login</button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        </div>
+      </div>
+<!-- ////////////////////////////////////////////////////////////////////////////////// -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/cruise-to-alexandria-egypt.avif" alt="cairo" class="d-block w-100">
+            <div class="carousel-caption">
+                <h3>Cairo</h3>
+                <p>We had such a great time in Cairo!</p>
+                <button type="button" class="btn btn-primary">Visit Us</button>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/Elephantine-Island-Aswan-Egypt3.webp" alt="aswan" class="d-block w-100">
+            <div class="carousel-caption">
+                <h3>Aswan</h3>
+                <p>We had such a great time in Aswan!</p>
+                <button type="button" class="btn btn-primary">Visit Us</button>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/sarm-el-seyh-shaba-cami.jpg" alt="sharm" class="d-block w-100">
+            <div class="carousel-caption">
+                <h3>Sharm Elshisk</h3>
+                <p>We had such a great time in Sharm Elshisk!</p>
+                <button type="button" class="btn btn-primary">Visit Us</button>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/2bkr4yc_1500.jpg" alt="alex" class="d-block w-100">
+            <div class="carousel-caption">
+                <h3>Alexandria</h3>
+                <p>We had such a great time in Alexandria!</p>
+                <button type="button" class="btn btn-primary">Visit Us</button>
+            </div>
+          </div>
+          <ul class="list list-unstyled text-center position-fixed z-3 end-0 mx-4 me-3" style="margin-top: 200px; font-size: 40px;">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-square-facebook" style="color: black;"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-twitter" style="color: black;"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-whatsapp" style="color: black;"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
+            </li>
+          </ul>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <div class="p-4 bg-muted text-primary">
+        <h1>Welcome:</h1>
+        <p>Are You Planning To Visit Egypt? We Offer The Ultimate Tour In Egypt, Covering Cairo, Alex. From A One Day Trip To A 10 Day Dream Vacation, We Will Take Care Of All Your Needs, Book Hotels. 24/7 Customer Service.</p>
+        <button type="button" class="btn btn-primary">Learn More</button>
+      </div>
+      <hr>
+      <div class="bg-primary text-light rounded mt-2 shadow-lg p-4 mb-4" style="text-align: center;">
+        <h1>Popular Destinations In Egypt</h1>
+      </div>
+      <!-- ////////////////////////////////////////////////////////////// -->
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="btn text-primary" data-bs-toggle="collapse" href="#collapseOne">
+              Giza City
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+                Giza is most famous as the location of the Giza Plateau, the site of some of the most impressive ancient monuments in the world, including a complex of ancient Egyptian royal mortuary and sacred structures, among which are the Great Sphinx, the Great Pyramid of Giza, and a number of other large pyramids and temples. Giza has always been a focal point in Egypt's history due to its location close to Memphis, the ancient pharaonic capital of the Old Kingdom.
+            </div>
+          </div>
+        </div>
+        <div class="card my-2">
+          <div class="card-header">
+            <a class="collapsed btn text-primary" data-bs-toggle="collapse" href="#collapseTwo">
+              Luxor City
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+                Luxor[a] is a city in Upper Egypt, which includes the site of the Ancient Egyptian city of Thebes. Luxor had a population of 1,333,309 in 2020,[2] with an area of approximately 417 km2 (161 sq mi)[1] and is the capital of the Luxor Governorate. It is among the oldest inhabited cities in the world.
+                Luxor has frequently been characterized as the "world's greatest open-air museum", as the ruins of the Egyptian temple complexes at Karnak and Luxor stand within the modern city. Immediately opposite, across the River Nile, lie the monuments, temples and tombs of the west bank Theban Necropolis, which includes the Valley of the Kings and Valley of the Queens. Thousands of tourists from all around the world arrive annually to visit Luxor's monuments, contributing greatly to the economy of the modern city. Yusuf Abu al-Haggag is the patron saint of Luxor.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn text-primary" data-bs-toggle="collapse" href="#collapseThree">
+              Sinai Peninsula City
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+                The Sinai Peninsula has been a part of Egypt from the First Dynasty of ancient Egypt (c. 3100 BC). This comes in stark contrast to the region north of it, the Levant (the present-day territories of Syria, Lebanon, Jordan, Israel and Palestine), which, due largely to its strategic geopolitical location and cultural convergences, has historically been the center of conflict between Egypt and various states of Mesopotamia and Asia Minor. In periods of foreign occupation, the Sinai was, like the rest of Egypt, also occupied and controlled by foreign empires, in more recent history the Ottoman Empire (1517–1867) and the United Kingdom (1882–1956). Israel invaded and occupied Sinai during the Suez Crisis (known in Egypt as the Tripartite Aggression due to the simultaneous coordinated attack by the UK, France and Israel) of 1956, and during the Six-Day War of 1967. On 6 October 1973, Egypt launched the Yom Kippur War, seizing most of the east bank of the Suez Canal and negotiating the rest of Sinai. In 1982, as a result of the Egypt–Israel peace treaty of 1979, Israel withdrew from all of the Sinai Peninsula except the contentious territory of Taba, which was returned after a ruling by a commission of arbitration in 1989.
+            </div>
+          </div>
+        </div>
+      </div>
+       <hr>
+       <div class="p-4 bg-primary text-light rounded" style="text-align: center;">
+        <h1>Translate From Arabic To English</h1>
+      </div>
+      <div class="mt-0 p-4 bg-muted text-primary">
+        <h3>Write And Translate:</h3>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          copy
+        </button>
+        <textarea class="form-control mt-2 bg-muted text-secoundry" id="exampleFormControlTextarea1" placeholder="Translate:" rows="5"></textarea>
+      </div>
+      <div class="p-4 bg-primary text-light rounded" style="text-align: center;">
+        <h1>Translate From Arabic To French</h1>
+      </div>
+      <div class="mt-0 p-4 bg-muted text-primary">
+        <h3>Write And Translate:</h3>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          copy
+        </button>
+        <textarea class="form-control mt-2 bg-muted text-secoundry" id="exampleFormControlTextarea1" placeholder="Translate:" rows="5"></textarea>
+      </div>
+      <div class="p-4 bg-primary text-light rounded" style="text-align: center;">
+        <h1>Translate From Arabic To Germany</h1>
+      </div>
+      <div class="mt-0 p-4 bg-muted text-primary">
+        <h3>Write And Translate:</h3>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          copy
+        </button>
+        <textarea class="form-control mt-2 bg-muted text-secoundry" id="exampleFormControlTextarea1" placeholder="Translate:" rows="5"></textarea>
+      </div>
+      <hr>
+      <div class="container-fluid background"></div>
+      <div class="p-4 bg-primary text-light rounded mt-1" style="text-align: center;">
+        <h1>Popular Destinations In Egypt</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card cards  mt-3" style="width:380px">
+            <img class="card-img-top" src="imgs/cruise-to-alexandria-egypt.avif"  height="250" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Cairo</h4>
+              <p class="card-text">Capital of Egypt.</p>
+              <button type="button" class="btn btn-primary">Know More</button>
+            </div>
+          </div>
+        </div>
+          <div class="col">
+            <div class="card cards mt-3" style="width:380px">
+            <img class="card-img-top" src="imgs/2bkr4yc_1500.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Alexandria</h4>
+              <p class="card-text">The bride of the Mediterranean.</p>
+              <button type="button" class="btn btn-primary">Know More</button>
+            </div>
+          </div>
+        </div>
+          <div class="col">       
+             <div class="card cards mt-3" style="width:380px">
+            <img class="card-img-top" src="imgs/1-1482121.webp" height="250" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Luxor</h4>
+              <p class="card-text">The Capital of the Ancient Kingdom.</p>
+              <button type="button" class="btn btn-primary">Know More</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card cards   mt-4" style="width:380px">
+            <img class="card-img-top" src="imgs/Elephantine-Island-Aswan-Egypt3.webp" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Aswan</h4>
+              <p class="card-text">Nubian City in The South of Egypt.</p>
+              <button type="button" class="btn btn-primary">Know More</button>
+            </div>
+          </div>
+        </div>
+          <div class="col">
+            <div class="card cards mt-4" style="width:380px">
+            <img class="card-img-top" src="imgs/new_administrative_capital_cbd_tower_0.jpg"  height="250" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">New Capital</h4>
+              <p class="card-text">The New Administrative Capital.</p>
+              <button type="button" class="btn btn-primary">Know More</button>
+            </div>
+          </div>
+        </div>
+          <div class="col">       
+             <div class="card cards  mt-4" style="width:380px">
+            <img class="card-img-top" src="imgs/sarm-el-seyh-shaba-cami.jpg"  height="250" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Sharm Elshisk</h4>
+              <p class="card-text">Beautiful City in Egypt.</p>
+              <button type="button" class="btn btn-primary">Know More</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card cards   mt-4" style="width:380px">
+              <img class="card-img-top" src="imgs/BIuoX6KEORmdzi9lrhm0tcD3WWAKXRpAS2Yd32QN.jpg"  height="250" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Siwa</h4>
+                <p class="card-text">Sunset Oasis.</p>
+                <button type="button" class="btn btn-primary">Know More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card cards  mt-4" style="width:380px">
+              <img class="card-img-top" src="imgs/ubicacion-hurghada.jpg"  height="250" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Hurgada</h4>
+                <p class="card-text">Favourite City on The Red Sea.</p>
+                <button type="button" class="btn btn-primary">Know More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card cards  mt-4" style="width:380px">
+              <img class="card-img-top" src="imgs/200611101955-01-egypt-dahab.jpg"  height="250" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">Dahab</h4>
+                <p class="card-text">City on The Red Sea.</p>
+                <button type="button" class="btn btn-primary">Know More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid background2 mt-3"></div>
+      <hr>
+      <div class="p-4 bg-primary text-light rounded mt-1" style="text-align: center;">
+        <h1>Thanks For</h1>
+      </div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card mt-4  persons" style="width:400px;height: 450px;">
+              <img class="card-img-top" src="imgs/WhatsApp Image 2024-07-15 at 9.13.18 PM.jpeg" alt="Card image" height="450">
+              <div class="card-img-overlay mask text-light d-flex flex-column text-center" style="background-color: rgba(0, 0, 0, 0.5)">
+                <h4 class="card-title text-light">All Thanks And Appreciation To:</h4>
+                 <a href="#" class="text-light"><i class="fa-regular fa-clock"> October 15, 2020</i></a> 
+                 <div class="circle_img"></div>
+              </div>
+            </div>
+          </div>
+            <div class="col">
+              <div class="card mt-4 persons" style="width:400px;height: 450px;">
+              <img class="card-img-top" src="imgs/WhatsApp Image 2024-07-15 at 9.13.18 PM.jpeg" alt="Card image" height="450">
+              <div class="card-img-overlay mask text-light d-flex flex-column text-center" style="background-color: rgba(0, 0, 0, 0.5)">
+                <h4 class="card-title text-light">All Thanks And Appreciation To:</h4>
+                <a href="#" class="text-light"><i class="fa-regular fa-clock"> October 15, 2020</i></a> 
+                <div class="circle_img"></div>
+              </div>
+            </div>
+          </div>
+            <div class="col">
+              <div class="card mt-4 persons " style="width:400px;height: 450px;">
+                <img class="card-img-top" src="imgs/WhatsApp Image 2024-07-15 at 9.13.18 PM.jpeg" alt="Card image" height="450">
+                <div class="card-img-overlay mask text-light d-flex flex-column text-center" style="background-color: rgba(0, 0, 0, 0.5)">
+                  <h4 class="card-title text-light">All Thanks And Appreciation To:</h4>
+                  <a href="#" class="text-light"><i class="fa-regular fa-clock"> October 15, 2020</i></a> 
+                  <div class="circle_img"></div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <hr>
+      <h1 class="text-primary" style="text-align: center;">Egypt News</h1>
+        <div class="container">
+        <div class="mt-3 p-5 bg-secondary text-dark egyptnews">
+        <h3>Podcast Title</h3>
+        <a href="#" class="text-light"><i class="fa-regular fa-calendar-days"></i></a> Mon, May 25th 2020
+        <div class="bar" style="width: 150px;height: 7px;border-radius: 50px; background-color: white;margin-top: 10px;"></div>
+        <img class="float-end news col-sm-8 col-lg-4 col-md-8" src="imgs/istockphoto-499086515-612x612.jpg" alt="" width="500" height="386" style="margin-top: -130px; margin-right: -48px;">
+          <p style=" padding-top: 10px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore
+             beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium
+            maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto
+            quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+          </p>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-solid fa-arrow-up-from-bracket"></i></a> Podcast</button>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-regular fa-clock"></i></a> 55 mins.</button>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-solid fa-play"></i></a> Play Episode</button>
+      </div>
+      </div>
+      <div class="container">
+        <div class="mt-3 p-5 bg-secondary text-dark egyptnews">
+        <h3>Podcast Title</h3>
+        <a href="#" class="text-light"><i class="fa-regular fa-calendar-days"></i></a> Mon, May 25th 2020
+        <div class="bar" style="width: 150px;height: 7px;border-radius: 50px; background-color: white;margin-top: 10px;"></div>
+        <img class="float-end news col-sm-8 col-lg-4 col-md-8" src="imgs/hc-t-egy-egypt-pyramids-of-giza-camel-1118623529-s-12x5.jpg" alt="" width="500" height="386" style="margin-top: -130px; margin-right: -48px;">
+          <p style=" padding-top: 10px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore
+             beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium
+            maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto
+            quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+          </p>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-solid fa-arrow-up-from-bracket"></i></a> Podcast</button>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-regular fa-clock"></i></a> 55 mins.</button>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-solid fa-play"></i></a> Play Episode</button>
+      </div>
+      </div>
+        <div class="container">
+        <div class="mt-3 p-5 bg-secondary text-dark  egyptnews">
+        <h3>Podcast Title</h3>
+        <a href="#" class="text-light"><i class="fa-regular fa-calendar-days"></i></a> Mon, May 25th 2020
+        <div class="bar" style="width: 150px;height: 7px;border-radius: 50px; background-color: white;margin-top: 10px;"></div>
+        <img class="float-end news col-sm-8 col-lg-4 col-md-8"src="imgs/istockphoto-499086515-612x612.jpg" alt="" width="500" height="386" style="margin-top: -130px; margin-right: -48px;">
+          <p style=" padding-top: 10px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore
+             beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium
+            maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto
+            quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+          </p>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-solid fa-arrow-up-from-bracket"></i></a> Podcast</button>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-regular fa-clock"></i></a> 55 mins.</button>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-solid fa-play"></i></a> Play Episode</button>
+      </div>
+      </div>
+      <div class="container">
+        <div class="mt-3 p-5 bg-secondary text-dark egyptnews">
+        <h3>Podcast Title</h3>
+        <a href="#" class="text-light"><i class="fa-regular fa-calendar-days"></i></a> Mon, May 25th 2020
+        <div class="bar" style="width: 150px;height: 7px;border-radius: 50px; background-color: white;margin-top: 10px;"></div>
+        <img class="float-end news col-sm-8 col-lg-4 col-md-8" src="imgs/hc-t-egy-egypt-pyramids-of-giza-camel-1118623529-s-12x5.jpg" alt="" width="500" height="386" style="margin-top: -130px; margin-right: -48px;">
+          <p style=" padding-top: 10px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore
+             beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium
+            maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto
+            quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!
+          </p>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-solid fa-arrow-up-from-bracket"></i></a> Podcast</button>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-regular fa-clock"></i></a> 55 mins.</button>
+          <button type="button" class="btn btn-dark mt-5"><a href="#" class="text-light"><i class="fa-solid fa-play"></i></a> Play Episode</button>
+      </div>
+      </div>
+      <h1 class="text-primary" style="text-align: center; margin-top: 30px;">Join Us</h1>
+      <div class="container">
+        <div class="joinus">
+          <div class="row">
+            <div class="col mt-4 col-md-12 col-sm-12 col-lg-3"><div class="bg-muted text-dark" style="width: 300px; height: 300px; border: 1px solid black; border-radius: 10px;">
+              <h4>Subscribe Now</h4>
+              <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+              <h4>Go To Link</h4>
+            </div></div>
+            <div class="col mt-4 col-md-12 col-sm-12 col-lg-3"><div class="bg-muted text-dark" style=" width: 300px; height: 300px; border: 1px solid black; border-radius: 10px;">
+              <h4>Follow</h4>
+              <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+              <h4>Go To Link</h4>
+            </div></div>
+            <div class="col mt-4 col-md-12 col-sm-12 col-lg-3"><div class="bg-muted text-dark" style=" width: 300px; height: 300px; border: 1px solid black; border-radius: 10px;">
+              <h4>Like the page</h4>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <h4>Go To Link</h4>
+            </div></div>
+            <div class="col mt-4 col-md-12 col-sm-12 col-lg-3"><div class="bg-muted text-dark" style=" width: 300px; height: 300px; border: 1px solid black; border-radius: 10px;">
+          <h4>watch videos</h4>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <h4>Go To Link</h4>
+        </div></div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="last container-fluid text-center bg-primary">
+        <div class="last-row row">
+          <div class=" col-12 col-sm-12 col-md-12 col-lg-4">
+            <hr>
+            <div>
+            <img class=" last-img " src="imgs/png-transparent-kempinski-nile-hotel-garden-city-cairo-logo-tourism-travel-egypt-tourism-blue-text-egypt.png" width="100px" height="100px" style="border-radius: 50px;">
+            <h6>Good Company</h6>
+          </div>
+            <hr>
+            <div class="det">
+              <p>Tel : 000-000-000</p>
+              <p>Visit Us</p>
+              <p>Services for all</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <hr>
+            <img class=" last-img " src="imgs/png-transparent-kempinski-nile-hotel-garden-city-cairo-logo-tourism-travel-egypt-tourism-blue-text-egypt.png" width="100px" height="100px" style="border-radius: 50px;">
+            <h6>Important Links</h6>
+            <hr>
+            <div class="det">
+              <p>Visit Us</p>
+              <p>Take alook</p>
+              <p>Services for all</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <hr>
+            <img class=" last-img " src="imgs/png-transparent-kempinski-nile-hotel-garden-city-cairo-logo-tourism-travel-egypt-tourism-blue-text-egypt.png" width="100px" height="100px" style="border-radius: 50px;">
+            <h6>Vision</h6>
+            <hr>
+            <div class="det">
+              <p>Provides best Services</p>
+              <p>You Will BE Better Than Before</p>
+              <p>Services for all</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="col-12  fs-2 ">COPYRIGHT &copy; 2024 AMR YASSER ABDELBASET GOOD COMPANY, ALL RIGHTS.</p>
+        <hr>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
